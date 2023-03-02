@@ -20,14 +20,22 @@ class vector:
         y = self.y - otro.y
         z = self.z - otro.z
         return(vector(x,y,z))
-#producto escalar 
+#producto punto 
     def __mul__(self,otro):
-        x = self.x*otro.x
-        y = self.y*otro.y
-        z = self.z*otro.z
-        return(x+y+z)
+        if (type(self)==type(otro)):
+             return(resultadovector)
+        resultadovector= self.x*otro.x + self.y*otro.y + self.z*otro.z
+        else 
+       
+
+        #resultado escalar 
+    def __rmul__(self,otro):
+        x = otro.x*self.x
+        y = otro.y*self.y
+        z = otro.z*self.z
 
 
+# impresiones 
 v1 = vector(1,2,3)
 v2 = vector(2,6,9)
 v3 = v1+v2
