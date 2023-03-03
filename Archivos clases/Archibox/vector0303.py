@@ -28,20 +28,14 @@ class vector:
         else 
        
 
-        #resultado escalar 
-    def __rmul__(self,otro):
-        x = otro.x*self.x
-        y = otro.y*self.y
-        z = otro.z*self.z
-
 
 # impresiones 
 v1 = vector(1,2,3)
 v2 = vector(2,6,9)
 v3 = v1+v2
-v4 = v1*v2
+#v4 = v1*v2
 print("suma:", v3)
-print("producto punto:", v4)
+#print("producto punto:", v4)
 
 
 
