@@ -20,12 +20,13 @@ class vector:
         y = self.y - otro.y
         z = self.z - otro.z
         return(vector(x,y,z))
-#producto punto 
+#producto punto y producto por escalar
     def __mul__(self,otro):
         if (type(self)==type(otro)):
-             return(resultadovector)
-        resultadovector= self.x*otro.x + self.y*otro.y + self.z*otro.z
-        else 
+             resultadoescalar= self.x*otro.x + self.y*otro.y + self.z*otro.z
+             return(resultadoescalar)
+        else:
+            return(vector(self.x*otro, self.y*otro, self.z*otro))
        
 
 
@@ -33,9 +34,9 @@ class vector:
 v1 = vector(1,2,3)
 v2 = vector(2,6,9)
 v3 = v1+v2
-#v4 = v1*v2
+v4 = v1*v2
 print("suma:", v3)
-#print("producto punto:", v4)
+print("resultado de la multiplicación:", v4)
 
 
 
