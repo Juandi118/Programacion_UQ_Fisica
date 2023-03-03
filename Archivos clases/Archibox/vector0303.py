@@ -27,16 +27,33 @@ class vector:
              return(resultadoescalar)
         else:
             return(vector(self.x*otro, self.y*otro, self.z*otro))
-       
+
+# definir multiplicacion por el otro lado 
+    def __rmul__(self,otro):
+        if (type(self)==type(otro)):
+             resultadoescalar= otro.x*self.x + otro.y*self.y + otro.y*self.z
+             return(resultadoescalar)
+        else:
+            return(vector(otro*self.x, otro*self.y, otro*self.z))
+
 
 
 # impresiones 
 v1 = vector(1,2,3)
 v2 = vector(2,6,9)
 v3 = v1+v2
-v4 = v1*v2
-print("suma:", v3)
-print("resultado de la multiplicación:", v4)
+
+print(v1)
+print(v2)
+print("numero entero:", 2)
+
+print("suma:",v3)
+print("resultado de la multiplicacion entre dos vectores (right):", v1*v2)
+print("resultado de la multiplicacion entre dos vectores:", v2*v1)
+print("resultado de la multiplicacion por un entero (right):", v2*2)
+print("resultado de la multiplicacion por un entero:", 2*v2)
+
+
 
 
 
