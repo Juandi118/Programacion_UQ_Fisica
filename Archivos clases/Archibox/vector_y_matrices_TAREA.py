@@ -1,4 +1,4 @@
-# Juan Diego Arias & David Sebastian Rivera
+# Juan Diego Arias I & David Sebastian Rivera
 
 class vector:
     def __init__(self,x,y,z):
