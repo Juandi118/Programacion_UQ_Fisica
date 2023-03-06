@@ -72,7 +72,14 @@ class matriz:
                         [numero*self.matriz[1][0], numero*self.matriz[1][1]]]
         return(matriz(nueva_matriz))
     
-    
+
+    def columna_i(self, indice):
+        respuesta = "|"+str(self.matriz[0][indice])+"|\n|"+str(self.matriz[1][indice])+"|"
+        return(respuesta)
+    #return [self.matriz[0][indice], self.matriz[1][indice]]
+
+
+
 
 #Operaciones con vectores
 print("Operaciones con vectores",sep="",end="\n\n")
@@ -80,10 +87,10 @@ v1 = vector(1,2,3)
 v2 = vector(2,6,9)
 
 print(v1)
-print(v2)
-print(v1+v2)
-print(v1-v2)
-print(v1*v2)
+print(v2,sep="",end="\n\n")
+print(v1+v2,sep="",end="\n\n")
+print(v1-v2,sep="",end="\n\n")
+print(v1*v2,sep="",end="\n\n")
 #print(v2*v1)
 print(v2*2,sep="",end="\n\n")
 #print(2*v2)
@@ -103,6 +110,12 @@ print(A+B,sep="",end="\n\n")
 print(A-B,sep="",end="\n\n")
 
 print(A*3,sep="",end="\n\n")
+
+print(A.columna_i(0),sep="",end="\n\n")
+
+print(A.columna_i(1),sep="",end="\n\n")
+
+
 
 #print(3*A,sep="",end="\n\n")
 
