@@ -1,3 +1,5 @@
+# Juan Diego Arias & David Sebastian Rivera
+
 class vector:
     def __init__(self,x,y,z):
         self.x = x 
@@ -72,37 +74,39 @@ class matriz:
     
     
 
+#Operaciones con vectores
+print("Operaciones con vectores",sep="",end="\n\n")
+v1 = vector(1,2,3)
+v2 = vector(2,6,9)
 
-#Impresiones para matrices
+print(v1)
+print(v2)
+print(v1+v2)
+print(v1-v2)
+print(v1*v2)
+#print(v2*v1)
+print(v2*2,sep="",end="\n\n")
+#print(2*v2)
 
+
+#Operaciones con matrices
+print("Operaciones con matrices",sep="",end="\n\n")
 A = matriz([[1,2],[3,4]])
 B = matriz([[1,2],[3,4]])
 
-print(A)
-print()
-print(B)
-print()
-print(A+B)
-print()
-print(A-B)
-print()
-print(A*3)
-print()
-print(3*A)
+print(A,sep="",end="\n\n")
 
-# impresiones 
-#v1 = vector(1,2,3)
-#v2 = vector(2,6,9)
-#v3 = v1+v2
+print(B,sep="",end="\n\n")
 
-#print(v1)
-#print(v2)
-#print("numero entero:", 2)
-#print("suma:",v3)
-#print("resultado de la multiplicacion entre dos vectores (right):", v1*v2)
-#print("resultado de la multiplicacion entre dos vectores:", v2*v1)
-#print("resultado de la multiplicacion por un entero (right):", v2*2)
-#print("resultado de la multiplicacion por un entero:", 2*v2)
+print(A+B,sep="",end="\n\n")
+
+print(A-B,sep="",end="\n\n")
+
+print(A*3,sep="",end="\n\n")
+
+#print(3*A,sep="",end="\n\n")
+
+
 
 
 
