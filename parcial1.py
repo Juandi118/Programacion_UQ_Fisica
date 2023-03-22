@@ -10,6 +10,7 @@ class RungeKutta:
 
     def f(self, x, y):
         return x * y + x ** 3
+#funcion de la forma dy/dx = f(x,y)
 
     def runge_kutta(self):
         x = self.x0
