@@ -46,3 +46,4 @@ print("Resuelve una ecuacion diferencial de la forma dy/dx=x*y+x**3,\
 print(f"Valor aproximado de y(x_n) = {y_aproximada:.6f}")
 #print(f"Error del metodo de orden h^4 = {error:.6f}")
 print(f"Error del orden h^4 = {orden_error:.6f}")
+#puede modificar la función en return usando las ED recomendadas
