@@ -7,4 +7,4 @@ además h estás dado por $h=\dfrac{(x_n-x_0)}{N}$, donde $N$ son el número de 
 
 En python creamos un clase RungeKutta donde se definen los parametros del método. 
 Se define una función que cumpla la forma $\dfrac{dy}{x}=f(x,y)$ en el que definimos $f(x,y)$ 
-Luego se hace un ciclo definiendo runge_kutta para tener definidos los valores de $k_1, k_2, k_3, k4, x$ en donde la variación de $x$ está dada por $x=x+h$ para obtener la aproximación a la solución de la ED dada por $y$
+Luego se hace un ciclo definiendo runge_kutta para tener definidos los valores de $k_1, k_2, k_3, k4, x$ en donde la variación o "saltos" de $x$ está dada por $x=x+h$ para obtener la aproximación a la solución de la ED dada por $y$
