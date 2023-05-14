@@ -1,5 +1,12 @@
-"""Se resuelve las torres de hanoi para n discos, usando recursividad"""
+"""Se resuelve las torres de hanoi para n discos, usando recursividad. JD. Arias"""
 
+def hanoicount(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * hanoicount(n-1) + 1
+
+    
 def hanoi(n, origen, auxiliar, destino):
     """
     Mueve n discos desde la torre origen hasta la torre destino
@@ -16,6 +23,12 @@ def hanoi(n, origen, auxiliar, destino):
         # Movemos los n-1 discos que están en auxiliar a destino utilizando origen como ayuda
         hanoi(n-1, auxiliar, origen, destino)
 
+"""Se pide al usuario ingresar el numero de discos, y medicante la función \
+hanoicount se imprimen los movimientos necesarios, luego se llama a la función \
+hanoi para resolver paso por paso, donde imprime cada uno de estos. """
 
+n = int(input("Ingrese el número de discos: "))
+movimientos = hanoicount(n)
+print("El número de movimientos necesarios es:", movimientos)
 
-hanoi(3, "A", "B", "C")
+hanoi(n, "A", "B", "C")
